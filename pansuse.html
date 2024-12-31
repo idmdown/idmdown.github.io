@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM配合油猴网盘脚本直链下载 - IDM下载工具</title>
+    <meta name="description" content="IDM配合油猴网盘脚本直链下载">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="/favicon.ico">
+                    
+    <style>
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .article-header {
+            background-color: blue;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .article-content {
+            line-height: 1.8;
+        }
+		.bg-image{
+		    background: url(images/bg_main440s.jpg);
+			background-position: top center;
+		}		
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Internet Download Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articles.html">IDM使用教程</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pansuse.html">IDM配合油猴网盘脚本直链下载</a></li>			
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-image article-header text-center py-5">
+        <div class="container">
+            <h1 class="display-4">IDM配合油猴网盘脚本直链下载</h1>
+            <p class="lead">通过油猴网盘脚本获取直链，调用IDM快速下载</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <article class="article-content">
+            <h2 class="text-center mb-4">IDM配合油猴网盘脚本直链下载</h2>
+<P>　　趁着今天空闲时间比较多，给大家带来一期百度网盘下载加速的全面教程，内容有点多，一定要耐心看完哟!原理就是利用油猴插件+IDM下载器，解析获取网盘直链，用IDM下载。</P>
+<P>　　一、油猴安装这里我用火狐浏览器为例进行油猴拓展安装，打开火狐浏览器，点击右上角倒数第二个拓展，找到最下面的管理拓展，然后打开。</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-1.png" width=552 height=948></CENTER>
+<P></P>
+<P>　　在里面的搜索框搜索Tampermonkey，然后找到下面对应的图标进行安装。</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-2.png" width=632 height=375></CENTER>
+<P></P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-3.png" width=632 height=297></CENTER>
+<P></P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-4.png" width=632 height=323></CENTER>
+<P></P>
+<P>　　安装成功后，你的浏览器页面右上角的拓展就会出现篡改猴的图标。</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-5.png" width=632 height=236></CENTER>
+<P></P>
+<P>　　二、IDM拓展安装在火狐拓展安装页面搜索IDM</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-6.png" width=632 height=229></CENTER>
+<P></P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-7.png" width=632 height=289></CENTER>
+<P></P>
+<P>　　点击拓展到火狐，进行安装IDM拓展。</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-8.png" width=632 height=351></CENTER>
+<P></P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-9.png" width=632 height=249></CENTER>
+<P></P>
+<P>　　拓展安装成功，火狐浏览器右上角就会出现下图的图标。</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-10.png" width=476 height=326></CENTER>
+<P></P>
+<P>　　三、IDM安装IDM介绍</P>
+<P>　　IDM(Internet Download Manager)是一款功能强大的网络下载器，您不需要多余的操作，IDM 能自动捕获您的下载，支持多线程下载软件，多个结点同时开始下载一个文件，速度成倍提升。即使网络断线、计算机宕机也能恢复下载任务。被誉为地表最强下载器，屌丝救星，小电影神器，不一而足。</P>
+<P>　　官网的版本为收费版本，本文站供了纯净版本(立即获取)。</P>
+<P>　　安装好 IDM,进入软件，点击上方的【选项】，按如下勾选</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-11.png" width=632 height=96></CENTER>
+<P></P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-12.png" width=632 height=776></CENTER>
+<P></P>
+<P>　　点击【文件类型】将以下内容追加复制进去，不要覆盖原内容</P>
+<P>　　3GP 7Z AAC ACE AI AIF ALZ APK APP APPX APPXBUNDLE ARC ARJ ASF AVI BH BIN BR BUNDLE BZ BZ2 CDA CSV DIF DLL DMG DOC DOCX EGG EPS EXE FLV GZ GZIP IMG IPA ISO ISZ JAR KEXT LHA LZ LZH LZMA M4A M4V MDB MID MKV MOV MP3 MP4 MPA MPE MPEG MPG MSI MSIX MSIXBUNDLE MSU MUI OGG OGV PDF PKG PPT PPTX PSD PST PUB QT R0* R1* RA RAR RM RMVB RTF SEA SIT SITX SLDM SLDX TAR TBZ TBZ2 TGZ TIF TIFF TLZ TXZ UDF VOB VSD VSDM VSDX VSS VSSM VST VSTM VSTX WAR WAV WBK WIM WKS WMA WMD WMS WMV WMZ WP5 WPD WPS XLS XLSX XPS XZ Z ZIP RAR ZIPX ZPAQ ZSTD</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-13.png" width=656 height=809></CENTER>
+<P></P>
+<P>　　安装网盘助手</P>
+<P>　　双击篡改猴，找到获取新脚本，然后点击</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-14.png" width=312 height=325></CENTER>
+<P></P>
+<P>　　进入Tampermonkeye页面，点击·GreasyFork(油叉)·</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-15.png" width=632 height=329></CENTER>
+<P></P>
+<P>　　搜索百度网盘千千下载助手(也可安装别的网盘助手，个人感觉这个比较好),点击安装</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-16.png" width=632 height=291></CENTER>
+<P></P>
+<P>　　网盘加速打开百度网盘网页版，并进行登录，选择你下载的文件，上方会出现千千下载助手，(图中别的网盘助手也是通过上述方式安装的)点击千千下载助手，获取网盘直链地址。</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-17.png" width=632 height=263></CENTER>
+<P></P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-18.png" width=632 height=390></CENTER>
+<P></P>
+<P>　　复制直链地址，然后打开idm</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-19.png" width=632 height=446></CENTER>
+<P></P>
+<P>　　3.点击新建任务，地址会自动粘贴上去，点击确认</P>
+<P>　　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-20.png" width=632 height=325></CENTER>
+<P></P>
+<P>　　会发现下载速度在5MB以上，比起百度网盘内的几十K，真的是太快了。</P>　
+<CENTER><IMG class="img-fluid rounded shadow mb-4" alt="IDM配合油猴网盘脚本直链下载" src="images/pansuse-21.png" width=632 height=445></CENTER>
+        </article>
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Internet Download Manager. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
